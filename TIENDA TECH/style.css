@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,500;0,600;0,700;0,800;1,400 & display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #99c2ff;
+}
+    
+
+.img-gmail {
+ width: 65px;
+ margin: 8%;
+ border-radius: 50px 50% 50% 50%;
+ position: relative;
+ height: 65px;
+ bottom: 50px;
+}
+
+.header-txt h3 {
+    color: #3a169b;
+    font-weight: normal;
+    font-size: 30px;
+    font-family: Arial;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5%;
+}
+
+.header-txt p{
+    color: rgb(55, 31, 75);
+    font-weight:25px;
+    font-size: 18px;
+    font-style: normal;
+    text-align: justify;
+}
+
+.logo {
+    color: #e43e14b9;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.pc2 {
+    position: absolute;
+    width: 70px;
+    z-index: -1;
+    right: 0;
+}
+
+
+
+.menu-icono{
+    width: 18px;    
+}
+
+.menu .navbar ul li a {
+    color:rgb(13, 16, 202);
+}
+
+.menu .navbar ul li:hover {
+    background: #c890eeec;
+    transition-delay: 0.3;
+}
+
+#menu {
+    display: none;
+}
+
+.navbar ul li {
+    position: relative;
+    float: left;
+    font-size: 20px;
+    padding: 20px;
+    background: #99c2ff;
+    display: block;
+    font-weight:600;   
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.form{
+	width:750px;
+	padding:70px;
+	border-radius:100px;
+	margin:auto;
+	background-color:#c79af1;
+}
+
+.form label{
+	width:110px;
+	font-weight: bold;
+	display:inline-block;
+}
+
+.form2{
+ text-align: center;
+}
+
+form input[type="text"] {
+	width:170px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+@media(max-width: 991px) {
+
+    .menu {
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+     
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+       width: 100%;
+    }
+
+    .menu .navbar ul li a {  
+            color: #ffffff;
+    }
+    
+    .menu .navbar ul li a:hover {
+             color: #bebebe;
+    }
+    
+    #menu:checked ~ .navbar {
+       display: initial;
+    }
+
+    .pc2{
+        width: 500px;
+    }
+}
